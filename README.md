@@ -1,1 +1,1 @@
-# webkit-inspector-bugs
+WebKit Inspector bug reductions.
