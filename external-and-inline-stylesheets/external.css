@@ -1,0 +1,7 @@
+@import "imported.css";
+
+@media all {
+    .external {
+        background-color: hsl(107, 27%, 50%);
+    }
+}

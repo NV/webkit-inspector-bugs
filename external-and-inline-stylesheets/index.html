@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="external.css"/>
+    <link rel="stylesheet" href="data:text/css;base64,LmJhc2U2NHtiYWNrZ3JvdW5kLWNvbG9yOmhzbCgxMDcsMjclLDUwJSl9"/>
+    <style>
+    .internal {
+        background-color: hsl(107, 27%, 50%);
+    }
+    </style>
+</head>
+<body>
+    <div class="external">&lt;link rel="stylesheet" href="..."&gt;</div>
+    <div class="base64">&lt;link rel="stylesheet" href="data:text/css;base64,..."&gt;</div>
+    <div class="imported">@import "imported.css"</div>
+    <div class="internal">&lt;style&gt;...&lt;/style&gt;</div>
+    <div style="background-color: hsl(107, 27%, 50%)">style="..."</div>
+<style>
+body {
+    background: hsl(71, 29%, 85%)
+}
+div {
+    font: 14px sans-serif;
+    margin: .4em;
+    padding: .6em;
+    color: hsl(0, 0%, 100%)
+}
+</style>
+</body>
+</html>
