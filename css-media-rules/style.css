@@ -1,9 +1,9 @@
 body {
-	background-color: plum;
+    background-color: plum;
 }
 
 @media all {
     body {
-	    background-color: hsl(60, 80%, 90%); /* lightgoldenrodyellow */
+        background-color: hsl(60, 80%, 90%); /* lightgoldenrodyellow */
     }
 }
