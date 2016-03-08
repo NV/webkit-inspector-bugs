@@ -6,17 +6,12 @@ html, body, .wrapper {
 .wrapper {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .box {
     flex: 1;
     background: ivory;
-    border: 1px solid rgb(220, 217, 180);
-}
-
-.editor {
-    -webkit-user-modify: read-write-plaintext-only;
+    border: 1px solid hsl(55, 36%, 78%);
 }
 
 .CodeMirror {
