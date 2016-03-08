@@ -1,0 +1,25 @@
+html, body, .wrapper {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.box {
+    flex: 1;
+    background: ivory;
+    border: 1px solid rgb(220, 217, 180);
+}
+
+.editor {
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.CodeMirror {
+    border: 1px solid #eee;
+    height: auto;
+}

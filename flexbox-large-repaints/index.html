@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¯\_(ツ)_/¯</title>
+    <link rel="stylesheet" href="codemirror.css">
+    <script src="codemirror.js"></script>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="box">A box</div>
+    <div class="box">
+        <textarea id="editor">CodeMirror editor</textarea>
+    </div>
+</div>
+<script>
+var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+    lineNumbers: false,
+    mode: "text/html",
+    viewportMargin: Infinity,
+    matchBrackets: true
+});
+</script>
+</body>
+</html>
