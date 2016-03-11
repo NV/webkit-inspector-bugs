@@ -1,20 +1,48 @@
-html, body, .wrapper {
-    height: 100%;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-.wrapper {
+html, body {
+    height: 100%;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    font-family: -apple-system, sans-serif;
 }
 
-.box {
+#main {
+    display: flex;
     flex: 1;
-    background: ivory;
-    border: 1px solid hsl(55, 36%, 78%);
 }
 
-.CodeMirror {
-    border: 1px solid #eee;
-    height: auto;
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#tab-browser {
+    flex: 1;
+}
+
+.quick-console {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid #CCC;
+    padding: 3px 0 4px;
+    outline: none;
+    overflow: hidden;
+    font-family: Menlo, monospace;
+}
+
+.quick-console > .console-prompt {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }

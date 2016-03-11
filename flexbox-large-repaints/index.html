@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="flexbox.css">
 </head>
 <body>
-<div class="wrapper">
-    <div class="box"><a href="https://bugs.webkit.org/show_bug.cgi?id=145324">Web Inspector: Large repaints when typing any character in console</a></div>
-    <div class="box">
-        <textarea id="editor">CodeMirror editor</textarea>
+<div id="main">
+    <div id="content">
+        <div id="tab-browser" class="tab-browser">
+            <a href="https://bugs.webkit.org/show_bug.cgi?id=145324">Web Inspector: Large repaints when typing any character in console</a>
+        </div>
+        <div id="quick-console" class="quick-console">
+            <div class="console-prompt syntax-highlighted text-prompt">
+                <textarea id="editor">CodeMirror editor</textarea>
+            </div>
+        </div>
     </div>
 </div>
 <script>
