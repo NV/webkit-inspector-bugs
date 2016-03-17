@@ -4,6 +4,7 @@
 
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 body {
@@ -45,4 +46,8 @@ body {
     max-height: 150px;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+#editor {
+    -webkit-user-modify: read-write-plaintext-only;
 }

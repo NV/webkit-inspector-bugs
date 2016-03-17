@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Flexbox Large Repaints - Can't reproduce</title>
-    <link rel="stylesheet" href="codemirror.css">
-    <script src="codemirror.js"></script>
     <link rel="stylesheet" href="flexbox.css">
 </head>
 <body>
@@ -15,18 +13,11 @@
         </div>
         <div id="quick-console" class="quick-console">
             <div class="console-prompt syntax-highlighted text-prompt">
-                <textarea id="editor">CodeMirror editor</textarea>
+                <div id="editor">Type here</div>
             </div>
         </div>
     </div>
 </div>
-<script>
-var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-    lineNumbers: false,
-    mode: "text/html",
-    viewportMargin: Infinity,
-    matchBrackets: true
-});
-</script>
+
 </body>
 </html>
