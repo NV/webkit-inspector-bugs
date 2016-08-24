@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    html {
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        margin: 0;
+    }
+    body > * {
+        margin: 8px 12px;
+    }
+    #stats {
+
+    }
+    #input {
+        flex: 1;
+    }
+    </style>
+</head>
+<body>
+<div id="stats">
+    <table>
+        <tr><td>Spaces:</td><td id="spaces">?</td></tr>
+        <tr><td>Non-spaces:</td><td id="non-spaces">?</td></tr>
+        <tr><td>Ratio:</td><td id="ratio">?</td><td><b id="answer"></b></td></tr>
+    </table>
+</div>
+<textarea id="input">/**
+ * React v0.14.2
+ *
+ * Copyright 2013-2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var t;t="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,t.React=e()}}(function(){return function e(t,n,r){function o(i,u){if(!n[i]){if(!t[i]){var s="function"==typeof require&&require;if(!u&&s)return s(i,!0);if(a)return a(i,!0);var l=new Error("Cannot find module '"+i+"'");throw l.code="MODULE_NOT_FOUND",l}var c=n[i]={exports:{}};t[i][0].call(c.exports,function(e){var n=t[i][1][e];return o(n?n:e)},c,c.exports,e,t,n,r)}return n[i].exports}for(var a="function"==typeof require&&require,i=0;i<r.length;i++)o(r[i]);return o}({1:[function(e,t,n){"use strict";var r=e(35),o=e(45),a=e(61),i=e(23),u=e(104),s={};i(s,a),i(s,{findDOMNode:u("findDOMNode","ReactDOM","react-dom",r,r.findDOMNode),render:u("render","ReactDOM","react-dom",r,r.render),unmountComponentAtNode:u("unmountComponentAtNode","ReactDOM","react-dom",r,r.unmountComponentAtNode),renderToString:u("renderToString","ReactDOMServer","react-dom/server",o,o.renderToString),renderToStaticMarkup:u("renderToStaticMarkup","ReactDOMServer","react-dom/server",o,o.renderToStaticMarkup)}),s.__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=r,t.exports=s},{104:104,23:23,35:35,45:45,61:61}],2:[function(e,t,n){"use strict";var r=e(63),o=e(106),a=e(136),i={componentDidMount:function(){this.props.autoFocus&&a(o(this))}},u={Mixin:i,focusDOMComponent:function(){a(r.getNode(this._rootNodeID))}};t.exports=u},{106:106,136:136,63:63}],3:[function(e,t,n){"use strict";function r(){var e=window.opera;return"object"==typeof e&&"function"==typeof e.version&&parseInt(e.version(),10)<=12}function o(e){return(e.ctrlKey||e.altKey||e.metaKey)&&!(e.ctrlKey&&e.altKey)}</textarea>
+<script src="is-minified.js"></script>
+</body>
+</html>
