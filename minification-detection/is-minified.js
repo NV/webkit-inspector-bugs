@@ -28,7 +28,7 @@ function isMinified(content) {
 
         if (i >= 500) {
             ratio = whiteSpaceCount / i;
-            if (ratio < 0.05) {
+            if (ratio < 0.1) {
                 definitelyMinified = true;
                 break;
             }
@@ -43,7 +43,7 @@ function isMinified(content) {
         document.getElementById("answer").textContent = "Definitely minified!";
     else {
         ratio = whiteSpaceCount / i;
-        if (ratio < 0.1)
+        if (ratio < 0.2)
             document.getElementById("answer").textContent = "Looks minified.";
         else
             document.getElementById("answer").textContent = "Looks not minified.";
