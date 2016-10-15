@@ -30,6 +30,7 @@ var App = {
     }
 };
 
+
 class AppClass {
     constructor() {
         this.x = 1;
@@ -41,8 +42,24 @@ class AppClass {
     }
 }
 
+
+App.aClass = class aClass {
+    constructor()
+    {
+        this.x = 1;
+    }
+
+    blah()
+    {
+        this.x = slowFunction2();
+        return this.x;
+    }
+};
+
+
 console.log(slowFunction());
 console.log(foo());
 console.log(App.bar());
 console.log(new AppClass());
 console.log(new AppClass().blah());
+console.log(new App.aClass().blah());
