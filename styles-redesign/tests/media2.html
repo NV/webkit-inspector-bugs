@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>@media</title>
+<style>
+* {color: orangered}
+.in {font-size: 16px;}
+
+@media screen {
+    * {color: orange}
+    .in {font-size: 15px;}
+}
+
+@media screen and (max-height:999999px) { /* Always match */
+    * {color: black}
+    .in {font-size: 14px;}
+}
+@media screen and (max-height:1px) and (max-width:1px) { /* Never match */
+    * {color: red}
+    .in {font-size: 9999px;}
+}
+
+/* "min-resolution: 192dpi" is shown as "min-resolution: " in WebKit because min-resolution is unsupported selector */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { /* two selectors */
+    * {outline: none;}
+}
+</style>
+</head>
+<body class="out">
+<div class="in">
+    <h3 id="title">@media</h3>
+    <p>Foo bar</p>
+</div>
+</body>
+</html>
