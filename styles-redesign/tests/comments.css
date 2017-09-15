@@ -1,0 +1,16 @@
+p {
+    /* color: green; */
+    font-size: 12px;
+
+    /* http://webkit.org/ */
+    /* color: red; border: 1px solid red;*/
+    /*
+    float: left;
+    text-align: left;
+    */
+
+    invalid-name: invalid-value;
+}
+
+/* same line properties */
+* {font-size:13px;color: orangered}
