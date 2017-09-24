@@ -1,0 +1,13 @@
+.title {
+    border-bottom: .5px solid palegoldenrod;
+    text-align: left;
+}
+
+.title::after {
+    content: '!';
+    opacity: 0.8;
+}
+
+.title:hover {
+    color: darkblue;
+}
