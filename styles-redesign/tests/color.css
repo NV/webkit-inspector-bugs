@@ -1,0 +1,15 @@
+.item-1 {
+    background: whitesmoke;
+    color: #333;
+
+    background: #EEEfff;
+
+    background-image: linear-gradient(whitesmoke, #fff2db);
+    color: rgb(1, 23, 255);
+
+    border: .5px solid hsl(60, 66%, 91%);
+    border: .5px solid hsla(60, 66%, 91%, 0.5);
+
+    outline: 1px solid rgba(1,2,3, /* blah */ 0.1);
+    box-shadow: 1px 1px 1px hsla(60, 66%, 91%, 0.5);
+}
