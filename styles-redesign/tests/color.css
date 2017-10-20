@@ -1,3 +1,10 @@
+:root {
+    --background-lightness: 95%;
+    --third: 0.33333333;
+    --text-redness: 10;
+    --white: #fff;
+}
+
 .item-1 {
     background: whitesmoke;
     color: #333;
@@ -5,14 +12,23 @@
     background: #EEEfff;
 
     background-image: linear-gradient(hsl(60, 66%, 91%), #fff2db);
-    color: rgb(1, 23, 255);
+    color: rgb(212, 8, 4);
 
     border: .5px solid hsl(60, 66%, 91%);
     border: .5px solid hsla(60, 66%, 91%, 0.5);
 
     /* outline: 1px solid rgba(1,2,3, 0.1); */
-    box-shadow: 1px 1px 1px hsla(60, 66%, 91%, 0.5);
+    box-shadow: 1px 1px 1px hsla(60, 66%, 91%, 0.9);
 
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
     transition-timing-function: spring(1 1 1 1);
+}
+
+body {
+    background: hsl(57, 64%, var(--background-lightness));
+    color: rgb(var(--text-redness), 10, 10);
+
+    background-image: linear-gradient(hsl(57, 64%, var(--background-lightness)), var(--white));
+
+    transition-timing-function: cubic-bezier(1, var(--third), 1, 0.1);
 }
