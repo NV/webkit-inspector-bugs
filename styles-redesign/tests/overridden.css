@@ -1,0 +1,18 @@
+body {
+    font-size: 15px;
+    background: invalid-name;
+    invalid: property;
+}
+
+.out {
+    font-size: 14px;
+    background: antiquewhite;
+
+    invalid: property;
+    color: invalid-name;
+}
+
+h1 {
+    invalid: property;
+    color: invalid-name;
+}
