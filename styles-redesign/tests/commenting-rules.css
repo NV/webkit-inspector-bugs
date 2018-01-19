@@ -1,0 +1,21 @@
+body {
+    margin: 1em;
+}
+
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+div + div {
+    margin-left: 1em;
+}
+
+.a {
+    background: hsl(319, 100%, 21%);
+}
+
+.b {
+    background: hsl(153, 100%, 21%);
+}
