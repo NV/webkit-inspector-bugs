@@ -24,10 +24,10 @@ var ContentEditable = React.createClass({
 
     emitChange: function(evt) {
         var html = this.getDOMNode().innerHTML;
-        if (this.props.onChange && html !== this.lastHtml) {
+        if (this.props.onChange && html !== this.lastText) {
             evt.target = {value: html};
             this.props.onChange(evt);
         }
-        this.lastHtml = html;
+        this.lastText = html;
     }
 });
