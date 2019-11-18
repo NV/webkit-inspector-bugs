@@ -1,4 +1,5 @@
 self.addEventListener("message", (ev) => {
-    console.info("pong");
+    console.info("Service worker", ev);
+    debugger;
     ev.source.postMessage("pong");
 });
