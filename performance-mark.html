@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Performance mark</title>
+</head>
+<body>
+<script>
+performance.mark("start-mark");
+
+setTimeout(function() {
+    console.timeStamp("timeStamp");
+    performance.mark("end-mark");
+
+    setTimeout(function() {
+        performance.measure("my-measure", "start-mark", "end-mark");
+    }, 1000);
+
+}, 1000);
+</script>
+</body>
+</html>
