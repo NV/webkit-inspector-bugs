@@ -14,7 +14,7 @@ class TextField extends React.Component {
 
     return e(
       "input",
-      {autofocus: "autofocus", onInput}
+      {autoFocus: "autofocus", onInput}
     );
   }
 }
