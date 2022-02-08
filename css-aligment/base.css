@@ -1,0 +1,49 @@
+body {
+    font: 12px sans-serif;
+}
+
+h3 {
+    font-size: inherit;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+section, .overview {
+    display: flex;
+    flex-wrap: wrap;
+    color: #65a800;
+}
+
+.container {
+    height: 200px;
+    width: 150px;
+    border: 1px solid hsl(33, 72%, 58%);
+    background: hsl(33, 100%, 93%);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container > div {
+    background-color: hsl(68, 49%, 71%);
+    border: 1px solid currentColor;
+    text-align: right;
+}
+
+body.grid .container {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-auto-rows: 40px;
+    grid-gap: 10px;
+}
+
+body.flexbox .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body.flexbox .container > div {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
